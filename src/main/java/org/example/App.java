@@ -14,13 +14,9 @@ public class App
         Scanner input = new Scanner(System.in);
         System.out.println( "What is the input string?" );
         String str = input.next();
-        int count = 0;
+        int length = str.length();
 
-        for (int i = 0; i < str.length(); i++){
-            if(str.charAt(i) != ' ')
-                count++;
-        }
 
-        System.out.println(str + " has " + count + " characters.");
+        System.out.println(str + " has " + length + " characters.");
     }
 }
